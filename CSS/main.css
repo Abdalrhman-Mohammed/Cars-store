@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style-type: none;
+  direction: ltr;
+}
+
+header {
+  background-color: #0e0a0a;
+  color: white;
+  padding: 15px 15px 0;
+  text-align: center;
+}
+header .container {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas: "sign logo  .";
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container h2 {
+  grid-area: logo;
+}
+header .sign-in {
+  position: relative;
+  grid-area: sign;
+  width: 45px;
+  height: 45px;
+  border: 1px dotted white;
+  border-radius: 50%;
+}
+header .sign-in img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+header .container a {
+  position: absolute;
+  left: 45px;
+  top: 11px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+nav {
+  background-image: linear-gradient(180deg, #100b0b, #0a0c12);
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #e8eaf6;
+  padding: 10px;
+  font-size: 18px;
+}
+#hero {
+  padding: 20px;
+  background-image: url(../image/IMG_20230722_182853_228.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#hero div {
+  text-align: center;
+}
+#hero div h2 {
+  padding: 20px 0;
+}
+#hero div a {
+  background-color: red;
+  color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+section .fill {
+  background-image: linear-gradient(to bottom, rgb(43 43 43), #f4e4e4);
+  text-align: center;
+  padding: 10px;
+  color: #e3f2fd;
+  box-shadow: 1px 6px 8px 0px #a59d9d;
+}
+#container {
+  background-color: white;
+}
+section #cars {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin-top: 20px;
+}
+.car-card {
+  box-shadow: 1px 3px 10px navy, -1px -3px 10px #f00;
+  background-color: #fdfbf3;
+  width: 300px;
+  padding: 20px 20px 5px;
+  margin-bottom: 25px;
+  text-align: center;
+  border: 1px solid #909090;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.car-card img,
+.car-card h3,
+.car-card p,
+.car-card .btn {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.car-card img {
+  width: 70%;
+  height: 120px;
+  border-radius: 20px;
+}
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-card h3 {
+  text-transform: capitalize;
+}
+.car-card .prag {
+  font-size: 18px;
+}
+.car-card .motor-car {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  padding: 7px;
+}
+.motor-car p {
+  background-image: linear-gradient(188deg, #6c5c5c, #eaeaea);
+  color: #fffde7;
+  padding: 6px;
+  box-shadow: 3px 4px 9px #3e3938;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: context-menu;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+/* .car-card .btn {
+  background: #333;
+  padding: 5px 16px;
+  color: white;
+  border-radius: 9px;
+}
+.car-card .btn:hover {
+  box-shadow: 1px 3px 10px 2px #555;
+} */
+footer {
+  position: relative;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+}
+
+footer p.plan {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+footer .lang {
+  background-color: #333;
+  color: white;
+  width: 80px;
+  padding: 3px 0;
+  box-sizing: content-box;
+  border: 1px solid #555555;
+  outline: none;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  section #cars {
+    flex-direction: column;
+    align-items: center;
+  }
+  .car-card {
+    width: 96%;
+    margin: 0 5px 20px;
+  }
+  .car-card img {
+    height: auto;
+  }
+}

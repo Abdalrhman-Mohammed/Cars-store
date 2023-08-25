@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/sign.css" />
+    <title>sign in</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="form">
+        <div class="tab-group">
+          <ul>
+            <li data="sign-up" class="tab">
+              <a href="#sign-up">sign up</a>
+            </li>
+            <li data="sign-in" class="tab">
+              <a href="#login">sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div id="sign-up">
+            <h2>sing up for free</h2>
+            <form action="./index.html" method="get" novalidate>
+              <div class="top-row">
+                <div class="auth">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    name="fname"
+                    id="first"
+                    required
+                  />
+                  <label for="first"
+                    >first name <span class="fill">*</span></label
+                  >
+                </div>
+                <div class="auth">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    name="lname"
+                    id="last"
+                    required
+                  />
+                  <label for="last"
+                    >last name <span class="fill">*</span></label
+                  >
+                </div>
+              </div>
+              <div class="auth">
+                <input
+                  type="email"
+                  placeholder=" "
+                  name="mail"
+                  id="email"
+                  required
+                />
+                <label for="email">Email <span class="fill">*</span></label>
+              </div>
+              <div class="auth">
+                <input
+                  type="password"
+                  placeholder=" "
+                  name="password"
+                  id="pass"
+                  required
+                />
+                <label for="pass">password <span class="fill">*</span></label>
+              </div>
+              <div class="button">
+                <input type="submit" value="log in" />
+              </div>
+              <!-- <select defaultValue="اختار اللغه" class="lang">
+                <option value="اختار اللغه" disabled>اختار اللغه</option>
+                <option value="Ar">العربية</option>
+                <option value="En" selected>English</option>
+              </select> -->
+            </form>
+          </div>
+          <div id="login">
+            <h2>welcame back!</h2>
+            <form action="./index.html" method="get" novalidate>
+              <div class="auth">
+                <input
+                  type="email"
+                  placeholder=" "
+                  name="email"
+                  id="email2"
+                  required
+                />
+                <label for="email2">email <span class="fill">*</span></label>
+              </div>
+              <div class="auth">
+                <input
+                  type="password"
+                  placeholder=" "
+                  name="password"
+                  id="password"
+                  required
+                />
+                <label for="pass">password <span class="fill">*</span></label>
+              </div>
+              <p class="forgot"><a href="#">Forgot Password?</a></p>
+              <div class="button">
+                <input type="submit" value="log in" />
+              </div>
+            </form>
+          </div>
+          <select defaultValue="اختار اللغه" class="lang">
+            <option value="اختار اللغه" disabled>اختار اللغه</option>
+            <option value="Ar">العربية</option>
+            <option value="En" selected>English</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="./js/sign.js"></script>
+  </body>
+</html>

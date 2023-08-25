@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  direction: rtl;
+}
+:root {
+  --back-sian: #2fc9b7;
+  --color-white: white;
+  --color-bord: #0db8de;
+  --border-liner: #03e9f4;
+  --back-from: #1a2226;
+}
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#141e30, #243b55);
+  /* background-color: #222d32; */
+}
+.form {
+  background-color: var(--back-from);
+  width: 70vh;
+}
+.page .form .tab-group {
+  margin: 10px 0 30px;
+  height: 50px;
+}
+.page .form .tab-group ul {
+  display: flex;
+  height: 100%;
+  margin: 0 20px;
+  background-color: #9e9e9ecc;
+}
+.page .form .tab-group ul li.tab {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.page .form .tab-group ul li.active {
+  background-color: var(--back-sian);
+  cursor: default;
+}
+.page .form .tab-group ul li.tab a {
+  width: 100%;
+  color: #ffffffc4;
+  cursor: pointer;
+  text-align: center;
+}
+.page .form .tab-group ul li.active a {
+  width: 100%;
+  color: var(--color-white);
+  cursor: default;
+  text-align: center;
+}
+#login {
+  display: none;
+}
+#sign-up {
+  display: none;
+}
+.page .form .tab-content h2 {
+  width: 100%;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+.form .tab-content form {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
+.form .tab-content .top-row {
+  display: flex;
+  justify-content: space-between;
+}
+.form .tab-content .fill {
+  color: var(--back-sian);
+}
+.form .tab-content .auth {
+  position: relative;
+  margin-bottom: 40px;
+}
+.form .tab-content .top-row input#first {
+  width: 97%;
+}
+
+input,
+textarea {
+  font-size: 18px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-bord);
+  font-weight: bold;
+  color: white;
+  outline: none;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -20px;
+  left: 3px;
+}
+input:focus ~ label span,
+input:not(:placeholder-shown) ~ label span {
+  display: none;
+}
+label {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 5px;
+  color: var(--color-white);
+  transition: 0.5s;
+}
+.forgot {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.forgot a {
+  color: var(--color-bord);
+}
+form .button {
+  text-align: center;
+  height: 42px;
+  margin-bottom: 25px;
+}
+input[type="submit"] {
+  padding: 10px;
+  margin: 0 auto;
+  width: 30%;
+  border: none;
+  border-radius: 13px;
+  color: var(--color-bord);
+  cursor: pointer;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  box-shadow: 0px 0px 0px var(--border-liner), 0px 0px 0px var(--border-liner),
+    0px 0px 0px var(--border-liner), 0px 0px 0px var(--border-liner);
+  animation: border-liner 2s linear(0 0%, 1 100%) 0s infinite;
+  -webkit-animation: border-liner 2s linear(0 0%, 1 100%) 0s infinite;
+  transition: box-shadow 2s;
+  -webkit-transition: box-shadow 2s;
+  -moz-transition: box-shadow 2s;
+  -ms-transition: box-shadow 2s;
+  -o-transition: box-shadow 2s;
+  box-shadow: none;
+}
+input[type="submit"]:hover {
+  background: #4fc3f7;
+  color: var(--color-white);
+  border: 1px dashed var(--color-white);
+  border-radius: 13px;
+  box-shadow: 0px -13px 10px 0px var(--border-liner),
+    13px 0px 10px var(--border-liner), 0px 13px 10px var(--border-liner),
+    -13px 0px 10px var(--border-liner);
+  animation: none;
+  -webkit-animation: none;
+  box-sizing: border-box;
+}
+select.lang {
+  background-color: var(--back-from);
+  color: var(--color-bord);
+  width: 80px;
+  padding: 3px 0;
+  margin: 0 20px;
+  box-sizing: content-box;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  float: right;
+}
+
+@keyframes border-liner {
+  0.1% {
+    box-shadow: inset 0px 2px 2px var(--border-liner);
+  }
+  25% {
+    box-shadow: inset -2px 0px 2px var(--border-liner);
+  }
+  50% {
+    box-shadow: inset 0px -2px 2px var(--border-liner);
+  }
+  75% {
+    box-shadow: inset 2px 0px 2px var(--border-liner);
+  }
+  100% {
+    box-shadow: inset 0px 2px 2px var(--border-liner);
+  }
+}
