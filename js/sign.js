@@ -31,8 +31,8 @@ select.addEventListener("change", Change);
 function Change(event) {
   const current = event.target;
   if (current.value === "En") {
-    window.location.href = "/Cars-Store/sign.html";
+    window.location.href = "/Cars-store/sign.html";
   } else if (current.value === "Ar") {
-    window.location.href = "/Cars-Store/sign.Ar.html";
+    window.location.href = "/Cars-store/sign.Ar.html";
   }
 }

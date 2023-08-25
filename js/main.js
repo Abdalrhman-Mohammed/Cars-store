@@ -6,8 +6,8 @@ select.addEventListener("change", Change);
 function Change(event) {
   const current = event.target;
   if (current.value === "En") {
-    window.location.href = "/Cars-Store/";
+    window.location.href = "/Cars-store/";
   } else if (current.value === "Ar") {
-    window.location.href = "/Cars-Store/index.Ar.html";
+    window.location.href = "/Cars-store/index.Ar.html";
   }
 }

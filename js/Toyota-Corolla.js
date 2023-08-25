@@ -48,8 +48,8 @@ select.addEventListener("change", Change);
 function Change(event) {
   const current = event.target;
   if (current.value === "En") {
-    window.location.href = "/Cars-Store/Toyota-Corolla.html";
+    window.location.href = "/Cars-store/Toyota-Corolla.html";
   } else if (current.value === "Ar") {
-    window.location.href = "/Cars-Store/Toyota-Corolla.Ar.html";
+    window.location.href = "/Cars-store/Toyota-Corolla.Ar.html";
   }
 }
