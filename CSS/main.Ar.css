@@ -121,6 +121,22 @@ section #cars {
   border-radius: 10px;
   transition: 0.3s;
 }
+.open {
+  position: relative;
+}
+
+.open::before {
+  content: "open";
+  position: absolute;
+  top: 19px;
+  left: -3px;
+  width: 70px;
+  border-radius: 10px;
+  transform: rotate(321deg);
+  background-image: linear-gradient(45deg, #AB47BC, #D81B60);
+  color: white;
+  letter-spacing: 1px;
+}
 .car-card img,
 .car-card h3,
 .car-card p,
