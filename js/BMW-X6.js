@@ -48,8 +48,8 @@ select.addEventListener("change", Change);
 function Change(event) {
   const current = event.target;
   if (current.value === "En") {
-    window.location.href = "/BMW-X6.html";
+    window.location.href = "/Cars-Store/BMW-X6.html";
   } else if (current.value === "Ar") {
-    window.location.href = "/BMW-X6.Ar.html";
+    window.location.href = "/Cars-Store/BMW-X6.Ar.html";
   }
 }

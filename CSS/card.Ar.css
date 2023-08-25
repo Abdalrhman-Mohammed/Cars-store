@@ -340,6 +340,90 @@ section .tap-content #table .top i {
   position: absolute;
   left: 15px;
 }
+section .tap-content #price .cont-pric{
+  display: flex;
+  flex-direction: column;
+}
+section .tap-content #price table {
+  width: 100%;
+  text-align: start;
+  border-spacing: 0px;
+  font-size: 18px;
+  border: 1px solid #BDBDBD;
+  margin: 10px 0;
+}
+section .tap-content #price table thead td,
+section .tap-content #price table tbody td {
+  padding: 10px;
+}
+    section .tap-content #price table thead {
+      background-color: #0288d1;
+      font-weight: bold;
+}
+section .tap-content #price table tbody td {
+  background-color: white;
+  border: 1px solid #eee;
+}
+section .tap-content #price table tbody td.first-td {
+  background: #fafafa;
+}
+section .tap-content #price table .first-td {
+  width: 55%;
+}
+section .tap-content #price .ivinss {
+  margin: 15px 0;
+}
+section .tap-content #price .ivinss p {
+  padding: 10px 15px;
+  border: 1px solid #3F51B5;
+  border-radius: 10px;
+  background-color: #3F51B5;
+  text-align: start;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+section .tap-content #price form {
+  padding: 20px 15px;
+  border: 1px solid #90A4AE;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 17px;
+  text-align: start;
+  margin: 10px 0;
+}
+section .tap-content #price form input{
+  width: 100%;
+  height: 36px;
+  padding: 0 7px;
+  margin: 10px 0;
+  font-size: 17px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  outline: none;
+}
+section .tap-content #price form input#btn{
+  color: white;
+  background-color: #3F51B5;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+section .tap-content #price form select#period {
+  width: 36px;
+  height: 36px;
+  outline: none;
+  border-radius: 5px;
+}
+
 
 footer {
   grid-area: footer;
@@ -399,7 +483,7 @@ footer .lang {
     display: none;
   }
   section {
-    margin-left: 4px;
+    margin-right: 4px;
   }
   section div.title,
   section div.image {

@@ -266,6 +266,50 @@
         <div class="tap-content">
           <div id="price">
             <h2>BMW X6 price</h2>
+            <div class="cont-pric">
+              <table>
+                <thead>
+                  <tr>
+                    <td class="first-td">categories</td>
+                    <td>price</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="first-td">one category <span>( M60i )</span></td>
+                    <td>6,200,000 EGP</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="ivinss">
+                <p>Calculating the installment value</p>
+              </div>
+              <div>
+                <form method="get">
+                  <label for="price-form">price</label>
+                  <input type="text" id="price-form" placeholder="price">
+                  <label for="paid">paid</label>
+                  <input type="text" id="paid" placeholder="paid">
+                  <label for="interest">interest</label>
+                  <input type="text" id="interest" placeholder="%">
+                  <label for="period">installment years</label>
+                  <select name="period" id="period">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <input type="submit" id="btn" value="Calculate">
+                  <input type="text" class="res">
+                </form>
+              </div>
+            </div>
           </div>
           <div id="table">
             <h2>BMW X6 Specifications</h2>
